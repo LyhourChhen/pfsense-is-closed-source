@@ -1,4 +1,9 @@
-// search for spyware/backdoor:
+// just some mumbers and letters:
+// search for installed spyware/backdoor:
+
+
+
+
 
 /etc/rc.bootup
 ...

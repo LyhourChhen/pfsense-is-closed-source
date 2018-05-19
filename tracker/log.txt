@@ -1,11 +1,60 @@
-// just some mumbers and letters:
-// search for installed spyware/backdoor:
+test github just some mumbers and letters:
 
 /etc/rc.bootup
 ...
-
 /etc/rc.banner
 ...
-
 /etc/inc/system.inc
 ...
+/etc/rc.update_bogons.sh
+...
+/usr/local/www/system_update_settings.php
+...
+/usr/local/sbin/pfSense-upgrade
+...
+/usr/local/share/pfSense/pkg/repos
+...
+/usr/local/share/pfSense/keys/pkg/trusted/
+...
+/usr/local/www/widgets/widgets/rss.widget.php
+...
+/var/etc/nginx-webConfigurator.conf
+/etc/inc/system.inc
+/etc/ssh/sshd_config
+...
+ipv6 delete
+ifconfig | grep inet6
+ifconfig lo0 inet6 ::1 delete
+ifconfig lo0 inet6 fe80::1 delete
+...
+<firmware>
+<disablecheck>yes</disablecheck>
+</firmware>
+<do_not_send_host_uuid>yes</do_not_send_host_uuid>
+...
+
+Enable FreeBSD: { enabled: yes }
+/usr/local/share/pfSense/pkg/repos/
+/usr/local/etc/pkg/repos/
+pkg install ...
+pkg upgrade ...
+pkg update ...
+
+...
+NetRange:       162.208.116.0 - 162.208.119.255	# pkg, updates, dns...
+CIDR:           162.208.116.0 / 255.255.252.0
+CIDR:           162.208.116.0 / 22		# pkg servers 162.208.119.40:443 162.208.119.41:443 162.208.119.38:53
+IP:             208.123.73.0/24 # forum, mail...
+files.pfsense.org
+crashreporter.pfsense.org
+updates.pfsense.org
+snapshots.pfsense.org
+packages.pfsense.org
+pfsense.org
+freshports.org ?
+...
+#suricata block IP spyware
+drop ip 162.208.116.0/22 any -> any any (msg:"sense_spy ->"; classtype:bad-unknown; sid:9900211; rev:1;)
+drop ip any any -> 162.208.116.0/22 any (msg:"-> sense_spy"; classtype:bad-unknown; sid:9900212; rev:1;)
+drop ip 208.123.73.0/24 any -> any any (msg:"sense_spy ->"; classtype:bad-unknown; sid:9900213; rev:1;)
+drop ip any any -> 208.123.73.0/24 any (msg:"-> sense_spy"; classtype:bad-unknown; sid:9900214; rev:1;)

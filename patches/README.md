@@ -6,6 +6,6 @@ More info about the gnid blob at [/r/PFSENSE](https://www.reddit.com/r/PFSENSE/c
 You don't need any Netgate Unique ID unless you are using their paid support.
 
 ***
-![Where's the source code comedy yet again..](https://github.com/doktornotor/pfsense-closedsource/blob/master/Netgate%20Unique%20ID%20gnid%20blob%2001.png)
-![Where's the source code comedy yet again..](https://github.com/doktornotor/pfsense-closedsource/blob/master/Netgate%20Unique%20ID%20gnid%20blob%2002.png)
+![Where's the source code comedy yet again..](https://github.com/rapi3/pfsense-is-closed-source/blob/master/Netgate%20Unique%20ID%20gnid%20blob%2001.png)
+![Where's the source code comedy yet again..](https://github.com/rapi3/pfsense-is-closed-source/blob/master/Netgate%20Unique%20ID%20gnid%20blob%2002.png)
 ***
